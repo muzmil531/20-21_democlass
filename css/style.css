@@ -1,0 +1,80 @@
+body{
+	background-color: black;
+	color: wheat;
+}
+
+.flexpropertiescontainer{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.flexpropertiescontainer div{
+	width: 29%;
+	background-color: white;
+	color: black;
+	margin:1%; 
+	text-align: center;
+	padding: 1%;
+}
+.flexpropertiescontainer div img{
+	width: 100%;
+	height: 250px;
+	opacity: 0.5;
+}
+.flexpropertiescontainer div button{
+	border:none;
+	width: 200px;
+	height: 30px;
+	background-color: green;
+	border-radius: 10px;
+	color: white;	
+}
+.flexpropertiescontainer div img:hover{
+	transition: all 1s ease;
+	opacity: 1;
+	width: 90%;
+	height: 230px;
+}
+
+/*QUIRiES FOR MOBILE MODE*/
+
+/*MOBILE SIZE : min = 320px and max 767px*/
+
+@media only screen and (min-width:320px)and (max-width:767px){
+/*@media only screen and (min-width:320px) and (max-width:767px) {*/
+
+.flexpropertiescontainer{
+	flex-direction: column;
+}
+.flexpropertiescontainer div{
+	width: 95%;	
+}
+
+}
+
+
+/*TABLET MODE*/
+
+/* DESKTOP / LAPTOP : width >= 1024px*/
+@media only screen and (min-width:768px) and (max-width:1023px){
+
+
+.flexpropertiescontainer div{
+	width: 40%;
+}
+
+
+}
+
+
+
+/*GITHUB - */
+
+/*3+ pages
+
+HOME PAGE, CONTACT US PAGE, ABOUT US
+
+Serrive
+*/
+/*NAVIGATION only responsiv*/
